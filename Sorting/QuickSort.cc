@@ -44,7 +44,7 @@ int main(void){
 		V.push_back(tmp);
 	}
 
-	QuickSort(V, 1, size);
+	QuickSort(V, 0, size);
 
 	for(int i = 1; i <= size; i++)
 		cout << V[i] << " ";
