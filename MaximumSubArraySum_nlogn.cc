@@ -5,6 +5,7 @@ Time Complexity : O(n log n)
 */
 #include <cstdio>
 #include <iostream>
+#include <cmath>
 #include <vector>
 #include <algorithm>
 
@@ -47,7 +48,7 @@ int MaxSubArraySum(vector<int> &V, int start, int end){
 	if(isNegative(V)){
 		int min = INF;
 		for(int i = 0; i < V.size(); i++){
-			if(V[i] < min)
+			if(abs(V[i]) < min)
 				min = V[i];
 		}
 		return min;
